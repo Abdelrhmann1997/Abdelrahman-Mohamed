@@ -192,13 +192,8 @@ ul {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .7px var(--main-color);
-    animation: display-text 8s linear infinite;
-    animation-delay:calc(-4s* var(--1)) ;
-}
-@keyframes display-text {
-    50%, 100%{
-        display: none;
-    }
+    animation: 8s linear infinite;
+    animation-delay:calc(-4s) ;
 }
 .home .home-info h2 span::before {
     content: attr(data-text);
@@ -220,7 +215,7 @@ ul {
 }
 .home .home-info p {
     font-size: 14px;
-    margin: 10px 0 25px ;
+    margin: 10px 20px 25px ;
     max-width: 700px;
     color: var(--p-color);
     line-height: 1.6;
